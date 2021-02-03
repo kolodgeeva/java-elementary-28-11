@@ -18,23 +18,31 @@ public class QueueTest {
         strings.add(2);
         System.out.println(strings.toString());
 
-        strings.add(4);
-        System.out.println(strings.toString());
-
         strings.offer(5);
         System.out.println(strings.toString());
 
-        System.out.println(strings.peek());
+        strings.add(4);
+        System.out.println(strings.toString());
+
+        System.out.println("toString:");
         System.out.println(strings);
 
-        System.out.println(strings.element());
+        System.out.println("poll:");
+        System.out.println(strings.poll());
+        System.out.println(strings.poll());
+        System.out.println(strings.poll());
+        System.out.println(strings.poll());
+        System.out.println(strings.poll());
+
+
+        /*System.out.println(strings.element());
         System.out.println(strings);
 
         System.out.println(strings.remove());
         System.out.println(strings);
 
         System.out.println(strings.poll());
-        System.out.println(strings);
+        System.out.println(strings);*/
 
     }
 }
