@@ -3,7 +3,6 @@ package com.hillel.lesson8;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.Locale;
 
 public class MonthTest {
 
