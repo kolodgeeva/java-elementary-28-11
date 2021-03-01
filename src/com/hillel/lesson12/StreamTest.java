@@ -14,6 +14,7 @@ public class StreamTest {
 
         Stream<Integer> integerStream = Stream.of(10, 40, 40, 50, 5);
 
+        // test
     }
 
 }
