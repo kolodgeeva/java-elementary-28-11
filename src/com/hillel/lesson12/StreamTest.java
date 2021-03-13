@@ -12,9 +12,27 @@ public class StreamTest {
 
         Stream<String> stringStream = strings.stream();
 
-        Stream<Integer> integerStream = Stream.of(10, 40, 40, 50, 5);
+        Stream<Integer> integerStream = Stream.of(10, 5, 40, 40, 50, 5);
 
-        // test
+        integerStream
+                .distinct()
+                .forEach(System.out::println);
+
+        List<Integer> numbers = List.of(10, 5, 40, 40, 50, 5);
+
+        System.out.println("Numbers > 10: " + numbers.stream()
+                .filter(number -> number > 10)
+                .count());
+
+        strings.stream()
+                .filter(string -> string.length() == 3)
+                .forEach(System.out::println);
+
+        strings.stream()
+                .map(String::length)
+                .forEach(System.out::println);
+
+
     }
 
 }
